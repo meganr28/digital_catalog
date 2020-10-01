@@ -74,13 +74,14 @@ function Intro()
 function Story()
 {
     let c = color(165, 135, 143);
-    let logline, witch;
+    let logline, witch, img;
     let count = 0;
   
     this.setup = function() {
       
       logline = new Animation(width/2, height/2, 0, 0, "Logline");
       witch = new Animation(width/2, 300, 50, 30, 0);
+      img = loadImage('images/witch.png');
       
     }
   
@@ -96,6 +97,7 @@ function Story()
           logline.easeIn();
           // witch.display();
           // witch.easeIn();
+          image(img, 300, 50, 30, 20);
       } else if (count == 1) {
           text('Bios', width/2, height/2);
       } else if (count == 2) {

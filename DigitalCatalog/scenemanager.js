@@ -139,12 +139,34 @@ function SceneManager(p)
             // search current scene... 
             // can be optimized to avoid searching current scene...
             var i = this.findSceneIndex( this.scene.fnScene );
-            nextSceneIndex = i < this.scenes.length - 1 ? i + 1 : 0;
+            nextSceneIndex = i < this.scenes.length - 1 ? i + 1 : this.scenes.length - 1;
         }
 
         var nextScene = this.scenes[nextSceneIndex];
         this.showScene( nextScene.fnScene, sceneArgs );
     }
+  
+  
+    // Show previous scene in the collection
+    this.showPrevScene = function( sceneArgs )
+    {
+        if ( this.scenes.length == 0 )
+            return;
+
+        var nextSceneIndex = 0;
+
+        if ( this.scene != null )
+        {
+            // search current scene... 
+            // can be optimized to avoid searching current scene...
+            var i = this.findSceneIndex( this.scene.fnScene );
+            nextSceneIndex = i > 0 ? i - 1 : 0;
+        }
+
+        var prevScene = this.scenes[nextSceneIndex];
+        this.showScene( prevScene.fnScene, sceneArgs );
+    }
+  
     
     // This is the SceneManager .draw() method
     // This will dispatch the main draw() to the 

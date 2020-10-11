@@ -25,6 +25,8 @@ function setup() {
   mgr.showNextScene();
   
   // Set up images
+  imgmgr.loadStory();
+  imgmgr.loadChar();
   imgmgr.loadEnv();
   imgmgr.loadProps();
   
@@ -136,7 +138,9 @@ function Story()
           fill('black');
           logline.type();
           logline.display();
-          rect(width/2 + 500, 100, 400, 700);
+          imgmgr.story[0].resize(0, 600);
+          image(width/2 + 200, 50)
+//           rect(width/2 + 500, 100, 400, 700);
       } else if (count == 1) {
           mood.type();
           mood.display();

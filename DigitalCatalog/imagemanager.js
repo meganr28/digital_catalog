@@ -23,12 +23,12 @@ class ImageManager {
   
   loadMB() {
     let mb1, mb2, mb3, mb4, mb5, mb6;
-    mb1 = loadImage('images/moodBoard/mb1.jpg');
-    mb2 = loadImage('images/moodBoard/mb2.jpg');
-    mb3 = loadImage('images/moodBoard/mb3.jpg');
-    mb4 = loadImage('images/moodBoard/mb4.jpg');
-    mb5 = loadImage('images/moodBoard/mb5.jpg');
-    mb6 = loadImage('images/moodBoard/mb6.jpg');
+    mb1 = loadImage('images/moodBoard/mb1.JPG');
+    mb2 = loadImage('images/moodBoard/mb2.JPG');
+    mb3 = loadImage('images/moodBoard/mb3.JPG');
+    mb4 = loadImage('images/moodBoard/mb4.JPG');
+    mb5 = loadImage('images/moodBoard/mb5.JPG');
+    mb6 = loadImage('images/moodBoard/mb6.JPG');
     this.mb = [mb1, mb2, mb3, mb4, mb5, mb6];
   }
   

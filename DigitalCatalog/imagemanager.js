@@ -58,7 +58,7 @@ class ImageManager {
   
   loadProps() {
     let potions_box, spellbook;
-    potions_box = loadImage('images/props/potion_box.png');
+    potions_box = loadImage('images/props/potions_box.png');
     spellbook = loadImage('images/props/spellbook.png');
     this.props = [potions_box, spellbook];
   }

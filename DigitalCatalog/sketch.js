@@ -190,9 +190,9 @@ function Story()
           rect(1280, 100, 80, 100);
         
           // images
-          fill('white');
-          rect(400, 200, 320, 280);
-          image(imgmgr.mb[0], 100, 100, 100, 100);
+//           fill('white');
+//           rect(400, 200, 320, 280);
+          image(imgmgr.mb[0], 400, 200, 320, 280);
           rect(720, 200, 320, 280);
           rect(1040, 200, 320, 280);
           rect(400, 480, 320, 280);
@@ -327,13 +327,13 @@ function Prop()
       title.display();
       
       if (count == 1) {
-          fill('black');
-          rect(500, 400, 700, 500);
+//           fill('black');
+//           rect(500, 400, 700, 500);
           image(imgmgr.props[0], 500, 400, 700, 500);
       } else if (count == 2) {
-          rect(500, 400, 700, 500);
-          fill('white');
-          rect(1200, 400, 700, 500);
+//           rect(500, 400, 700, 500);
+//           fill('white');
+//           rect(1200, 400, 700, 500);
           image(imgmgr.props[0], 500, 400, 700, 500);
           image(imgmgr.props[1], 1200, 400, 700, 500);
       } 

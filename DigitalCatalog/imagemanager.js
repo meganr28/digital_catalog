@@ -1,10 +1,24 @@
 class ImageManager {
   
   constructor() {
+    this.story = [];
+    this.characters = [];
     this.environment = [];
     this.props = [];
   }
-
+  
+  loadStory() {
+    let tree;
+    tree = loadImage('images/environment/tree_transparent.png');
+  }
+  
+  loadChar() {
+    let w_expr, w_poses, w_turn;
+    w_expr = loadImage('images/character/witch_expressions.png');
+    w_poses = loadImage('images/character/witch_poses_3.png');
+    w_turn = loadImage('images/character/witch_turnaround.png');
+  }
+  
   loadEnv() {
     let bg_rough, bg_color_1, bg_color_2;
     bg_rough = loadImage('images/environment/bg_rough.png');

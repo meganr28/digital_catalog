@@ -26,6 +26,7 @@ function setup() {
   
   // Set up images
   imgmgr.loadStory();
+  imgmgr.loadMB();
   imgmgr.loadChar();
   imgmgr.loadEnv();
   imgmgr.loadProps();
@@ -138,7 +139,7 @@ function Story()
           fill('black');
           logline.type();
           logline.display();
-          image(imgmgr.story[0], width/2 + 250, 50, 400, 700);
+          image(imgmgr.story[0], width/2 + 300, 50, 400, 700);
       } else if (count == 1) {
           mood.type();
           mood.display();
@@ -160,7 +161,6 @@ function Story()
           fill(to);
           rect(640, 100, 80, 100);
         
-          // add more?
           from = color(212, 209, 255);
           to = color(252, 234, 215);
           colorMode(RGB); 
@@ -192,6 +192,7 @@ function Story()
           // images
           fill('white');
           rect(400, 200, 320, 280);
+          image(imgmgr.mb[0], 400, 200, 400, 700);
           rect(720, 200, 320, 280);
           rect(1040, 200, 320, 280);
           rect(400, 480, 320, 280);
@@ -199,10 +200,9 @@ function Story()
           rect(1040, 480, 320, 280);
         
       } else if (count == 2) {
-          print("hi")
+          // animation sequence 
         
       } else if (count == 3) {
-          // animation sequence before this
           bios.type();
           bios.display();
           textAlign(LEFT);

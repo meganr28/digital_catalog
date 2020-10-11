@@ -143,8 +143,8 @@ function Story()
       } else if (count == 1) {
           mood.type();
           mood.display();
-          fill('white');
-          text('Image Credit: Pinterest', 150, height-10)
+          fill('black');
+          text('Image Credit: Pinterest', 200, height-10);
         
           // color strips
           let from = color(192, 178, 178);
@@ -192,7 +192,7 @@ function Story()
           // images
           fill('white');
           rect(400, 200, 320, 280);
-          image(imgmgr.mb[0], 400, 200, 400, 700);
+          image(imgmgr.mb[0], 400, 200, 100, 100);
           rect(720, 200, 320, 280);
           rect(1040, 200, 320, 280);
           rect(400, 480, 320, 280);
@@ -274,16 +274,16 @@ function Environment()
       
       background(c);
       textAlign(CENTER);
-      fill('white');
+      fill('black');
       title.type();
       title.display();
       
       if (count == 1) {
-          image(imgmgr.environment[0], 100, 100, 1300, 650);
+          image(imgmgr.environment[0], 150, 100, 1200, 650);
       }  else if (count == 2) {
-          image(imgmgr.environment[1], 100, 100, 1300, 650);
+          image(imgmgr.environment[1], 150, 100, 1300, 650);
       }  else if (count == 3) {
-          image(imgmgr.environment[2], 100, 100, 1300, 650);
+          image(imgmgr.environment[2], 150, 100, 1300, 650);
       } 
       
     }
@@ -320,7 +320,7 @@ function Prop()
       
       background(c);
       textAlign(CENTER);
-      fill('white');
+      fill('black');
       
       title.type();
       title.display();

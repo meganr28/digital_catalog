@@ -144,7 +144,7 @@ function Story()
           mood.type();
           mood.display();
           fill('black');
-          text('Image Credit: Pinterest', 200, height-10);
+          text('Image Credit: Pinterest', 175, height-10);
         
           // color strips
           let from = color(192, 178, 178);
@@ -192,7 +192,7 @@ function Story()
           // images
           fill('white');
           rect(400, 200, 320, 280);
-          image(imgmgr.mb[0], 400, 200, 100, 100);
+          image(imgmgr.mb[0], 100, 100, 100, 100);
           rect(720, 200, 320, 280);
           rect(1040, 200, 320, 280);
           rect(400, 480, 320, 280);

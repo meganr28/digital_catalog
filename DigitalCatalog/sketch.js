@@ -204,6 +204,9 @@ function Story()
           // animation sequence 
         
       } else if (count == 3) {
+          fill('white');
+          rect(width/2 - 145, 0, 300, 80);
+          fill('black');
           bios.type();
           bios.display();
           textAlign(LEFT);
@@ -276,7 +279,7 @@ function Environment()
       background(c);
       
       fill('white');
-      rect(width/2 - 145, 0, 300, 80);
+      rect(width/2, 40, 300, 80);
       
       textAlign(CENTER);
       fill('black');
@@ -328,7 +331,7 @@ function Prop()
       background(c);
       
       fill('white');
-      rect(width/2 - 145, 0, 300, 80);
+      rect(width/2, 40, 300, 80);
       
       textAlign(CENTER);
       fill('black');

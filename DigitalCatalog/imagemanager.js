@@ -43,7 +43,7 @@ class ImageManager {
     f_poses = loadImage('images/character/fairy_poses_2.jpg');
     f_turn = loadImage('images/character/fairy_turnaround.jpg');
     a_expr = loadImage('images/character/alm_expressions.png');
-    a_poses = loadImage('images/character/alm_poses_3.png');
+    a_poses = loadImage('images/character/alm_poses.png');
     a_turn = loadImage('images/character/alm_turnaround.png');
     this.characters = [w_expr, w_poses, w_turn, f_expr, f_poses, f_turn, a_expr, a_poses, a_turn];
   }

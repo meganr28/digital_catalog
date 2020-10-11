@@ -10,6 +10,7 @@ class ImageManager {
   loadStory() {
     let tree;
     tree = loadImage('images/environment/tree_transparent.png');
+    this.story = [tree];
   }
   
   loadChar() {
@@ -17,6 +18,7 @@ class ImageManager {
     w_expr = loadImage('images/character/witch_expressions.png');
     w_poses = loadImage('images/character/witch_poses_3.png');
     w_turn = loadImage('images/character/witch_turnaround.png');
+    this.characters = [w_expr, w_poses, w_turn];
   }
   
   loadEnv() {

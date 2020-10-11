@@ -49,24 +49,28 @@ class Menu {
       noFill();
       rect(width/2, height/2, 1350, 750);
     
+      imageMode(CENTER);
+    
       if (charVal == "Witch") {
         
         if (typeVal == "Expressions") {
           
-            fill(207, 49, 43);
-            rect(width/2, height/2, 1200, 600);
-            imageMode(CENTER);
+//             fill(207, 49, 43);
+//             rect(width/2, height/2, 1200, 600);
+            
             image(imgmgr.characters[0], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
             fill(194, 39, 129);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[1], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
           
             fill(237, 157, 203);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[2], width/2, height/2, 1200, 600);
           
         }
         
@@ -76,16 +80,19 @@ class Menu {
           
             fill(122, 189, 23);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[3], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
             fill(14, 230, 86);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[4], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
           
             fill(29, 207, 189);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[5], width/2, height/2, 1200, 600);
        
         }
         
@@ -95,16 +102,19 @@ class Menu {
           
             fill(50, 144, 217);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[6], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
             fill(17, 14, 173);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[7], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
           
             fill(149, 32, 227);
             rect(width/2, height/2, 1200, 600);
+            image(imgmgr.characters[8], width/2, height/2, 1200, 600);
           
         }  
         

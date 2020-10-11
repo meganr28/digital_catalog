@@ -242,7 +242,7 @@ function Character()
   
     this.enter = function() {
       
-        menu = new Menu(menuShow);
+        menu = new Menu(menuShow, imgmgr);
         
     }
   

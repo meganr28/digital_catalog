@@ -7,7 +7,7 @@ let menuShow = 0;
 
 function setup() {
   
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1700, 800);
   
   mgr = new SceneManager();
   imgmgr = new ImageManager();
@@ -278,8 +278,7 @@ function Environment()
       if (count == 1) {
           fill('black');
           rect(width/2, height/2, 1300, 600);
-          imageMode(CENTER);
-          image(imgmgr.environment[0], width/2, height/2, 1300, 600);
+          image(imgmgr.environment[0], 100, 100, 1300, 600);
       }  else if (count == 2) {
           fill('white');
           rect(width/2, height/2, 1300, 600);

@@ -141,6 +141,9 @@ function Story()
           logline.display();
           image(imgmgr.story[0], width/2 + 300, 50, 400, 700);
       } else if (count == 1) {
+          fill('white');
+          rect(width/2 - 145, 0, 300, 80);
+          fill('black');
           mood.type();
           mood.display();
           fill('black');
@@ -190,20 +193,12 @@ function Story()
           rect(1280, 100, 80, 100);
         
           // images
-//           fill('white');
-//           rect(400, 200, 320, 280);
           image(imgmgr.mb[0], 400, 200, 320, 280);
           image(imgmgr.mb[1], 720, 200, 320, 280);
           image(imgmgr.mb[2], 1040, 200, 320, 280);
           image(imgmgr.mb[3], 400, 480, 320, 280);
           image(imgmgr.mb[4], 720, 480, 320, 280);
           image(imgmgr.mb[5], 1040, 480, 320, 280);
-        
-//           rect(720, 200, 320, 280);
-//           rect(1040, 200, 320, 280);
-//           rect(400, 480, 320, 280);
-//           rect(720, 480, 320, 280);
-//           rect(1040, 480, 320, 280);
         
       } else if (count == 2) {
           // animation sequence 
@@ -279,6 +274,10 @@ function Environment()
     this.draw = function() {
       
       background(c);
+      
+      fill('white');
+      rect(width/2 - 145, 0, 300, 80);
+      
       textAlign(CENTER);
       fill('black');
       title.type();
@@ -327,19 +326,18 @@ function Prop()
     this.draw = function() {
       
       background(c);
+      
+      fill('white');
+      rect(width/2 - 145, 0, 300, 80);
+      
       textAlign(CENTER);
       fill('black');
       title.type();
       title.display();
       
       if (count == 1) {
-//           fill('black');
-//           rect(500, 400, 700, 500);
           image(imgmgr.props[0], 500, 400, 700, 500);
       } else if (count == 2) {
-//           rect(500, 400, 700, 500);
-//           fill('white');
-//           rect(1200, 400, 700, 500);
           image(imgmgr.props[0], 500, 400, 700, 500);
           image(imgmgr.props[1], 1200, 400, 700, 500);
       } 

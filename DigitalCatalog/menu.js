@@ -98,22 +98,24 @@ class Menu {
         
       } else if (charVal == "Almiraj") {
         
+        fill('white');
+        
         if (typeVal == "Expressions") {
           
-            fill(50, 144, 217);
-            rect(width/2, height/2, 1200, 600);
+//             fill(50, 144, 217);
+//             rect(width/2, height/2, 1200, 600);
             image(imgmgr.characters[6], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
-            fill(17, 14, 173);
-            rect(width/2, height/2, 1200, 600);
+//             fill(17, 14, 173);
+//             rect(width/2, height/2, 1200, 600);
             image(imgmgr.characters[7], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
           
-            fill(149, 32, 227);
-            rect(width/2, height/2, 1200, 600);
+//             fill(149, 32, 227);
+//             rect(width/2, height/2, 1200, 600);
             image(imgmgr.characters[8], width/2, height/2, 1200, 600);
           
         }  

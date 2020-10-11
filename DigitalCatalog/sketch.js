@@ -278,6 +278,7 @@ function Environment()
       if (count == 1) {
           fill('black');
           rect(width/2, height/2, 1300, 600);
+          imageMode(CENTER);
           image(imgmgr.environment[0], width/2, height/2, 1300, 600);
       }  else if (count == 2) {
           fill('white');

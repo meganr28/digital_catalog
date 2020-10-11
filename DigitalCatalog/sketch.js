@@ -26,6 +26,7 @@ function setup() {
   
   // Set up images
   imgmgr.loadEnv();
+  imgmgr.loadProps();
   
 }
 
@@ -276,12 +277,11 @@ function Environment()
       title.display();
       
       if (count == 1) {
-          fill('black');
-          rect(width/2, height/2, 1300, 600);
-          image(imgmgr.environment[0], 100, 100, 1300, 600);
+          image(imgmgr.environment[0], 100, 100, 1300, 650);
       }  else if (count == 2) {
-          fill('white');
-          rect(width/2, height/2, 1300, 600);
+          image(imgmgr.environment[1], 100, 100, 1300, 650);
+      }  else if (count == 3) {
+          image(imgmgr.environment[2], 100, 100, 1300, 650);
       } 
       
     }
@@ -289,7 +289,7 @@ function Environment()
     this.keyPressed = function() {
           
         if (keyCode == DOWN_ARROW) {
-          if (count < 2) {
+          if (count < 3) {
             count += 1;
           }
         } else if (keyCode == UP_ARROW) {

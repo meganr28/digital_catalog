@@ -56,7 +56,7 @@ class Menu {
             fill(207, 49, 43);
             rect(width/2, height/2, 1200, 600);
             imageMode(CENTER);
-            image(imgmgr.char[0], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[0], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           

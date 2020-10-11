@@ -278,12 +278,14 @@ function Environment()
       title.type();
       title.display();
       
+      imageMode(CENTER);
+      
       if (count == 1) {
-          image(imgmgr.environment[0], 150, 100, 1200, 650);
+          image(imgmgr.environment[0], width/2, height/2, 1200, 650);
       }  else if (count == 2) {
-          image(imgmgr.environment[1], 150, 100, 1300, 650);
+          image(imgmgr.environment[1], width/2, height/2, 1300, 650);
       }  else if (count == 3) {
-          image(imgmgr.environment[2], 150, 100, 1300, 650);
+          image(imgmgr.environment[2], width/2, height/2, 1300, 650);
       } 
       
     }
@@ -321,17 +323,19 @@ function Prop()
       background(c);
       textAlign(CENTER);
       fill('black');
-      
       title.type();
       title.display();
       
       if (count == 1) {
           fill('black');
           rect(500, 400, 700, 500);
+          image(imgmgr.props[0], 500, 400, 700, 500);
       } else if (count == 2) {
           rect(500, 400, 700, 500);
           fill('white');
           rect(1200, 400, 700, 500);
+          image(imgmgr.props[0], 500, 400, 700, 500);
+          image(imgmgr.props[1], 1200, 400, 700, 500);
       } 
       
     }

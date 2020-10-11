@@ -138,8 +138,8 @@ function Story()
           fill('black');
           logline.type();
           logline.display();
-          imgmgr.story[0].resize(0, 600);
-          image(imgmgr.story[0], width/2 + 200, 50);
+//           imgmgr.story[0].resize(0, 600);
+          image(imgmgr.story[0], width/2 + 200, 50, 400, 700);
 //           rect(width/2 + 500, 100, 400, 700);
       } else if (count == 1) {
           mood.type();

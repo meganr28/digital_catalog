@@ -1,4 +1,5 @@
 let mgr;
+let imgmgr;
 let font;
 let menu;
 let menuShow = 0;
@@ -9,6 +10,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   
   mgr = new SceneManager();
+  imgmgr = new ImageManager();
   
   // Preload scenes
   mgr.addScene( Intro );
@@ -21,6 +23,9 @@ function setup() {
   
   
   mgr.showNextScene();
+  
+  // Set up images
+  imgmgr.loadEnv();
   
 }
 
@@ -273,6 +278,7 @@ function Environment()
       if (count == 1) {
           fill('black');
           rect(width/2, height/2, 1300, 600);
+          image(imgmgr.environment[0], width/2, height/2, 1300, 600);
       }  else if (count == 2) {
           fill('white');
           rect(width/2, height/2, 1300, 600);

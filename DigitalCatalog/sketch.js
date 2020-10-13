@@ -156,13 +156,13 @@ function Story()
           let interA = lerpColor(from, to, 0.33);
           let interB = lerpColor(from, to, 0.66);
           fill(from);
-          rect(400, 100, 80, 100);
+          rect(390, 100, 80, 100);
           fill(interA);
-          rect(480, 100, 80, 100);
+          rect(470, 100, 80, 100);
           fill(interB);
-          rect(560, 100, 80, 100);
+          rect(550, 100, 80, 100);
           fill(to);
-          rect(640, 100, 80, 100);
+          rect(630, 100, 80, 100);
         
           from = color(212, 209, 255);
           to = color(252, 234, 215);
@@ -170,13 +170,13 @@ function Story()
           interA = lerpColor(from, to, 0.33);
           interB = lerpColor(from, to, 0.66);
           fill(from);
-          rect(720, 100, 80, 100);
+          rect(710, 100, 80, 100);
           fill(interA);
-          rect(800, 100, 80, 100);
+          rect(790, 100, 80, 100);
           fill(interB);
-          rect(880, 100, 80, 100);
+          rect(870, 100, 80, 100);
           fill(to);
-          rect(960, 100, 80, 100);
+          rect(950, 100, 80, 100);
         
           from = color(191, 241, 242);
           to = color(247, 230, 245);
@@ -184,21 +184,21 @@ function Story()
           interA = lerpColor(from, to, 0.33);
           interB = lerpColor(from, to, 0.66);
           fill(from);
-          rect(1040, 100, 80, 100);
+          rect(1030, 100, 80, 100);
           fill(interA);
-          rect(1120, 100, 80, 100);
+          rect(1110, 100, 80, 100);
           fill(interB);
-          rect(1200, 100, 80, 100);
+          rect(1190, 100, 80, 100);
           fill(to);
-          rect(1280, 100, 80, 100);
+          rect(1270, 100, 80, 100);
         
           // images
-          image(imgmgr.mb[0], 400, 200, 320, 280);
-          image(imgmgr.mb[1], 720, 200, 320, 280);
-          image(imgmgr.mb[2], 1040, 200, 320, 280);
-          image(imgmgr.mb[3], 400, 480, 320, 280);
-          image(imgmgr.mb[4], 720, 480, 320, 280);
-          image(imgmgr.mb[5], 1040, 480, 320, 280);
+          image(imgmgr.mb[0], 390, 200, 320, 280);
+          image(imgmgr.mb[1], 710, 200, 320, 280);
+          image(imgmgr.mb[2], 1030, 200, 320, 280);
+          image(imgmgr.mb[3], 390, 480, 320, 280);
+          image(imgmgr.mb[4], 710, 480, 320, 280);
+          image(imgmgr.mb[5], 1030, 480, 320, 280);
         
       } else if (count == 2) {
           // animation sequence 
@@ -289,7 +289,9 @@ function Environment()
       imageMode(CENTER);
       
       if (count == 1) {
-          image(imgmgr.environment[0], width/2, height/2, 1200, 650);
+          imgmgr.environment[0].resize(0, 650);
+          image(imgmgr.environment[0], width/2, height/2);
+//           image(imgmgr.environment[0], width/2, height/2, 1200, 650);
       }  else if (count == 2) {
           image(imgmgr.environment[1], width/2, height/2, 1300, 650);
       }  else if (count == 3) {

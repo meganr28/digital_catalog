@@ -344,17 +344,11 @@ function Prop()
       title.type();
       title.display();
       
-      imgmgr.props[0].resize(0, 500);
-      imgmgr.props[1].resize(0, 500);
-      
       if (count == 1) {
           image(imgmgr.props[0], 500, 400, 700, 500);
-//           image(imgmgr.props[0], 500, 400, 700, 500);
       } else if (count == 2) {
-          image(imgmgr.props[0], 500, 400);
-          image(imgmgr.props[1], 1200, 400);
-//           image(imgmgr.props[0], 500, 400, 700, 500);
-//           image(imgmgr.props[1], 1200, 400, 700, 500);
+          image(imgmgr.props[0], 500, 400, 700, 500);
+          image(imgmgr.props[1], 1200, 400, 700, 500);
       } 
       
     }

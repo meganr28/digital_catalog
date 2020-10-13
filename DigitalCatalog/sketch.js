@@ -287,15 +287,19 @@ function Environment()
       title.display();
       
       imageMode(CENTER);
+      imgmgr.environment[0].resize(0, 650);
+      imgmgr.environment[1].resize(0, 650);
+      imgmgr.environment[2].resize(0, 650);
       
-      if (count == 1) {
-          imgmgr.environment[0].resize(0, 650);
-          image(imgmgr.environment[0], width/2, height/2);
+      if (count == 1) {   
+          image(imgmgr.environment[0], width/2, height/2 + 20);
 //           image(imgmgr.environment[0], width/2, height/2, 1200, 650);
       }  else if (count == 2) {
-          image(imgmgr.environment[1], width/2, height/2, 1300, 650);
+          image(imgmgr.environment[1], width/2, height/2 + 20);
+//           image(imgmgr.environment[1], width/2, height/2, 1300, 650);
       }  else if (count == 3) {
-          image(imgmgr.environment[2], width/2, height/2, 1300, 650);
+          image(imgmgr.environment[2], width/2, height/2 + 20);
+//           image(imgmgr.environment[2], width/2, height/2, 1300, 650);
       } 
       
     }
@@ -340,11 +344,17 @@ function Prop()
       title.type();
       title.display();
       
+      imgmgr.props[0].resize(0, 500);
+      imgmgr.props[1].resize(0, 500);
+      
       if (count == 1) {
           image(imgmgr.props[0], 500, 400, 700, 500);
+//           image(imgmgr.props[0], 500, 400, 700, 500);
       } else if (count == 2) {
-          image(imgmgr.props[0], 500, 400, 700, 500);
-          image(imgmgr.props[1], 1200, 400, 700, 500);
+          image(imgmgr.props[0], 500, 400);
+          image(imgmgr.props[1], 1200, 400);
+//           image(imgmgr.props[0], 500, 400, 700, 500);
+//           image(imgmgr.props[1], 1200, 400, 700, 500);
       } 
       
     }

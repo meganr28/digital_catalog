@@ -157,6 +157,7 @@ function Story()
     this.draw = function() {
       
 //       background(c);
+      background('black');
       textAlign(CENTER);
       
       if (count == 0) {
@@ -286,7 +287,7 @@ function Character()
     this.draw = function() {
       
 //         background(c);
-
+        background('black');
         menuShow = menu.display();
       
     }
@@ -310,6 +311,7 @@ function Environment()
     this.draw = function() {
       
 //       background(c);
+      background('black');
       
       fill('white');
       rect(width/2, 40, 300, 80);
@@ -368,6 +370,7 @@ function Prop()
     this.draw = function() {
       
 //       background(c);
+      background('black');
       
       fill('white');
       rect(width/2, 40, 300, 80);
@@ -408,6 +411,7 @@ function Storyboard()
     this.draw = function() {
       
 //       background(c);
+       background('black');
       
     }
 
@@ -420,6 +424,7 @@ function End()
     this.draw = function() {
       
 //       background(c);
+      background('black');
       textAlign(CENTER);
       
       

@@ -25,6 +25,7 @@ function setup() {
   mgr.showNextScene();
   
   // Set up images
+  imgmgr.loadTitle();
   imgmgr.loadStory();
   imgmgr.loadMB();
   imgmgr.loadChar();
@@ -80,7 +81,8 @@ function Intro()
 //            'By: The Wicked Cuties\n', width/2, height/2);
       
       imageMode(CENTER);
-      image('images/title_card.jpg', width/2, height/2);
+      imgmgr.title[0].resize(width, height);
+      image(imgmgr.title[0], width/2, height/2);
       
       fill('white');
       textSize(24);

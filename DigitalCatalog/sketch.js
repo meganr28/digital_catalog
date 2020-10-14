@@ -80,20 +80,16 @@ function Intro()
 //       text('Wicked Cute\n' +
 //            'By: The Wicked Cuties\n', width/2, height/2);
       
+      imageMode(CENTER);
+      imgmgr.title[0].resize(width, height);
+      image(imgmgr.title[0], width/2, height/2);
+      
       fill('white');
       textSize(24);
       text('Usage:\n' +
            'RIGHT ARROW to go to next scene\n' +
            'LEFT ARROW to go to previous scene\n' +
            'DOWN ARROW to move through scene', width/2, (height/2) + 300);
-      
-    }
-  
-    this.draw = function() {
-      
-      imageMode(CENTER);
-      imgmgr.title[0].resize(width, height);
-      image(imgmgr.title[0], width/2, height/2);
       
     }
 

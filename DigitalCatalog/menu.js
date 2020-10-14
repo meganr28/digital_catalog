@@ -50,38 +50,52 @@ class Menu {
       rect(width/2, height/2, 1350, 750);
     
       imageMode(CENTER);
+      imgmgr.characters[0].resize(0, 600);
+      imgmgr.characters[1].resize(0, 600);
+      imgmgr.characters[2].resize(0, 600);
+      imgmgr.characters[3].resize(0, 600);
+      imgmgr.characters[4].resize(0, 600);
+      imgmgr.characters[5].resize(0, 600);
+      imgmgr.characters[6].resize(0, 600);
+      imgmgr.characters[7].resize(0, 600);
+      imgmgr.characters[8].resize(0, 600);
     
       if (charVal == "Witch") {
         
         if (typeVal == "Expressions") {
 
-            imgmgr.characters[0].resize(0, 600);
+//             imgmgr.characters[0].resize(0, 600);
             image(imgmgr.characters[0], width/2, height/2);
 //             image(imgmgr.characters[0], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
-            image(imgmgr.characters[1], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[1], width/2, height/2);
+//             image(imgmgr.characters[1], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
 
-            image(imgmgr.characters[2], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[2], width/2, height/2);
+//             image(imgmgr.characters[2], width/2, height/2, 1200, 600);
           
         }
         
       } else if (charVal == "Fairy") {
         
         if (typeVal == "Expressions") {
-          
-            image(imgmgr.characters[3], width/2, height/2, 1200, 600);
+            
+            image(imgmgr.characters[3], width/2, height/2);
+//             image(imgmgr.characters[3], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
 
-            image(imgmgr.characters[4], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[4], width/2, height/2);
+//             image(imgmgr.characters[4], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
           
-            image(imgmgr.characters[5], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[5], width/2, height/2);
+//             image(imgmgr.characters[5], width/2, height/2, 1200, 600);
        
         }
         
@@ -92,15 +106,18 @@ class Menu {
         
         if (typeVal == "Expressions") {
           
-            image(imgmgr.characters[6], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[6], width/2, height/2);
+//             image(imgmgr.characters[6], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           
-            image(imgmgr.characters[7], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[7], width/2, height/2);
+//             image(imgmgr.characters[7], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Turnaround") {
 
-            image(imgmgr.characters[8], width/2, height/2, 1200, 600);
+            image(imgmgr.characters[8], width/2, height/2);
+//             image(imgmgr.characters[8], width/2, height/2, 1200, 600);
           
         }  
         

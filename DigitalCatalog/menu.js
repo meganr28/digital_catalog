@@ -55,7 +55,9 @@ class Menu {
         
         if (typeVal == "Expressions") {
 
-            image(imgmgr.characters[0], width/2, height/2, 1200, 600);
+            imgmgr.characters[0].resize(0, 600);
+            image(imgmgr.characters[0], width/2, height/2);
+//             image(imgmgr.characters[0], width/2, height/2, 1200, 600);
           
         } else if (typeVal == "Poses") {
           

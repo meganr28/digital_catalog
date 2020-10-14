@@ -12,7 +12,7 @@ class ImageManager {
   loadTitle() {
     let title;
     title = loadImage('images/title_card.jpg');
-    this.story = [title];
+    this.title = [title];
   }
   
   loadStory() {

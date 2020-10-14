@@ -74,11 +74,15 @@ function Intro()
       textFont("Courier Prime");
       textAlign(CENTER);
       
-      textSize(36);
-      fill('black');
-      text('Wicked Cute\n' +
-           'By: The Wicked Cuties\n', width/2, height/2);
+//       textSize(36);
+//       fill('black');
+//       text('Wicked Cute\n' +
+//            'By: The Wicked Cuties\n', width/2, height/2);
       
+      imageMode(CENTER);
+      image('images/title_card.jpg', width/2, height/2);
+      
+      fill('white');
       textSize(24);
       text('Usage:\n' +
            'RIGHT ARROW to go to next scene\n' +

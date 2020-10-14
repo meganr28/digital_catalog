@@ -113,6 +113,8 @@ function Story()
   
     this.enter = function() {
       
+      imageMode(CORNER);
+      
       if (menuShow) {
         menuShow = menu.hide();
       }

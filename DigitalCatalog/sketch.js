@@ -71,7 +71,7 @@ function Intro()
   
     this.enter = function() {
       
-      background('black');
+//       background('black');
       textFont("Courier Prime");
       textAlign(CENTER);
       
@@ -84,22 +84,30 @@ function Intro()
 //       imgmgr.title[0].resize(0, 400);
 //       image(imgmgr.title[0], width/2, height/2);
       
-      fill('white');
-      textSize(24);
-      text('Digital Catalog', width/2, height/2 + 200);
-      text('Usage:\n' +
-           'RIGHT ARROW to go to next scene\n' +
-           'LEFT ARROW to go to previous scene\n' +
-           'DOWN ARROW to move through scene', width/2, (height/2) + 300);
+//       fill('white');
+//       textSize(24);
+//       text('Digital Catalog', width/2, height/2 + 200);
+//       text('Usage:\n' +
+//            'RIGHT ARROW to go to next scene\n' +
+//            'LEFT ARROW to go to previous scene\n' +
+//            'DOWN ARROW to move through scene', width/2, (height/2) + 300);
       
     }
   
     this.draw = function() {
       
-//        background('black');
+       background('black');
        imageMode(CENTER);
        imgmgr.title[0].resize(0, 800);
        image(imgmgr.title[0], width/2, height/2);
+      
+       fill('white');
+       textSize(24);
+       text('Digital Catalog', width/2, height/2 + 200);
+       text('Usage:\n' +
+             'RIGHT ARROW to go to next scene\n' +
+             'LEFT ARROW to go to previous scene\n' +
+             'DOWN ARROW to move through scene', width/2, (height/2) + 300);
       
     }
   
@@ -140,15 +148,15 @@ function Story()
       logline = new Animation(width/2, height/2, 0, 0, story_text[0]);
       mood = new Animation(width/2, 50, 0, 0, titles[0]);
       bios = new Animation(width/2, 50, 0, 0, titles[1]);
-      witch = new Animation(50, 150, 0, 0, characters[0]);
-      fairy = new Animation(50, 350, 0, 0, characters[1]);
-      alm = new Animation(50, 550, 0, 0, characters[2]);
+      witch = new Animation(50, 170, 0, 0, characters[0]);
+      fairy = new Animation(50, 370, 0, 0, characters[1]);
+      alm = new Animation(50, 570, 0, 0, characters[2]);
       
     }
   
     this.draw = function() {
       
-      background(c);
+//       background(c);
       textAlign(CENTER);
       
       if (count == 0) {
@@ -277,7 +285,7 @@ function Character()
   
     this.draw = function() {
       
-        background(c);
+//         background(c);
 
         menuShow = menu.display();
       
@@ -301,7 +309,7 @@ function Environment()
   
     this.draw = function() {
       
-      background(c);
+//       background(c);
       
       fill('white');
       rect(width/2, 40, 300, 80);
@@ -359,7 +367,7 @@ function Prop()
   
     this.draw = function() {
       
-      background(c);
+//       background(c);
       
       fill('white');
       rect(width/2, 40, 300, 80);
@@ -399,7 +407,7 @@ function Storyboard()
   
     this.draw = function() {
       
-      background(c);
+//       background(c);
       
     }
 
@@ -411,7 +419,7 @@ function End()
   
     this.draw = function() {
       
-      background(c);
+//       background(c);
       textAlign(CENTER);
       
       

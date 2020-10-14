@@ -71,7 +71,7 @@ function Intro()
   
     this.enter = function() {
       
-      background(c);
+//       background(c);
       textFont("Courier Prime");
       textAlign(CENTER);
       
@@ -80,9 +80,9 @@ function Intro()
 //       text('Wicked Cute\n' +
 //            'By: The Wicked Cuties\n', width/2, height/2);
       
-      imageMode(CENTER);
-      imgmgr.title[0].resize(0, 400);
-      image(imgmgr.title[0], width/2, height/2);
+//       imageMode(CENTER);
+//       imgmgr.title[0].resize(0, 400);
+//       image(imgmgr.title[0], width/2, height/2);
       
       fill('white');
       textSize(24);
@@ -96,7 +96,7 @@ function Intro()
     this.draw = function() {
        background('black');
        imageMode(CENTER);
-       imgmgr.title[0].resize(0, 400);
+       imgmgr.title[0].resize(0, 800);
        image(imgmgr.title[0], width/2, height/2);
     }
   

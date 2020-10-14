@@ -1,11 +1,18 @@
 class ImageManager {
   
   constructor() {
+    this.title = [];
     this.story = [];
     this.mb = [];
     this.characters = [];
     this.environment = [];
     this.props = [];
+  }
+  
+  loadTitle() {
+    let title;
+    title = loadImage('images/title_card.jpg');
+    this.story = [title];
   }
   
   loadStory() {

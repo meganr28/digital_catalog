@@ -92,7 +92,14 @@ function Intro()
            'DOWN ARROW to move through scene', width/2, (height/2) + 300);
       
     }
-
+  
+    this.draw = function() {
+       background('black');
+       imageMode(CENTER);
+       imgmgr.title[0].resize(0, 400);
+       image(imgmgr.title[0], width/2, height/2);
+    }
+  
 }
 
 function Story()

@@ -71,7 +71,7 @@ function Intro()
   
     this.enter = function() {
       
-//       background(c);
+      background('black');
       textFont("Courier Prime");
       textAlign(CENTER);
       
@@ -80,12 +80,13 @@ function Intro()
 //       text('Wicked Cute\n' +
 //            'By: The Wicked Cuties\n', width/2, height/2);
       
-//       imageMode(CENTER);
-//       imgmgr.title[0].resize(0, 400);
-//       image(imgmgr.title[0], width/2, height/2);
+      imageMode(CENTER);
+      imgmgr.title[0].resize(0, 400);
+      image(imgmgr.title[0], width/2, height/2);
       
       fill('white');
       textSize(24);
+      text('Digital Catalog', width/2, height/2);
       text('Usage:\n' +
            'RIGHT ARROW to go to next scene\n' +
            'LEFT ARROW to go to previous scene\n' +
@@ -93,12 +94,12 @@ function Intro()
       
     }
   
-    this.draw = function() {
-       background('black');
-       imageMode(CENTER);
-       imgmgr.title[0].resize(0, 800);
-       image(imgmgr.title[0], width/2, height/2);
-    }
+//     this.draw = function() {
+//        background('black');
+//        imageMode(CENTER);
+//        imgmgr.title[0].resize(0, 800);
+//        image(imgmgr.title[0], width/2, height/2);
+//     }
   
 }
 
@@ -158,10 +159,14 @@ function Story()
       } else if (count == 1) {
           fill('white');
           rect(width/2 - 145, 0, 300, 80);
+          rect(15, 115, 300, 80);
+          rect(15, height/2, 300, 80);
           fill('black');
           mood.type();
           mood.display();
           fill('black');
+          text('Colors', 160, 160);
+          text('Environment', 160, 450);
           text('Image Credit: Pinterest', 175, height-10);
         
           // color strips
@@ -216,15 +221,18 @@ function Story()
           image(imgmgr.mb[5], 1030, 480, 320, 280);
         
       } else if (count == 2) {
-          // animation sequence 
-        
-      } else if (count == 3) {
           fill('white');
+          rect(30, 100, 1250, 600);
           rect(width/2 - 145, 0, 300, 80);
           fill('black');
           bios.type();
           bios.display();
           textAlign(LEFT);
+          textStyle(BOLD);
+          text('WITCH', 50, 140);
+          text('FAIRY', 50, 340);
+          text('ALMIRAJ', 50, 540);
+          textStyle(NORMAL);
           witch.display();
           fairy.display();
           alm.display();

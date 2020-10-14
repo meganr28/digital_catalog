@@ -81,7 +81,7 @@ function Intro()
 //            'By: The Wicked Cuties\n', width/2, height/2);
       
       imageMode(CENTER);
-      imgmgr.title[0].resize(width, height);
+      imgmgr.title[0].resize(0, 100);
       image(imgmgr.title[0], width/2, height/2);
       
       fill('white');

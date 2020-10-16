@@ -298,12 +298,20 @@ function Environment()
 {
     let c = color(110, 68, 104);
     let title;
+    let rough, color1, color2;
     let count = 0;
   
     this.enter = function() {
       
       menuShow = menu.hide();
       title = new Animation(width/2, 50, 0, 0, 'ENVIRONMENT');
+      
+      imgmgr.environment[0].resize(0, 650);
+      imgmgr.environment[1].resize(0, 650);
+      imgmgr.environment[2].resize(0, 650);
+      rough = new Animation(width/2, height/2 + 20, 0, 0, False, imgmgr.environment[0]);
+      color1 = new Animation(width/2, height/2 + 20, 0, 0, False, imgmgr.environment[1]);
+      color2 = new Animation(width/2, height/2 + 20, 0, 0, False, imgmgr.environment[2]);
       
     }
   
@@ -322,18 +330,22 @@ function Environment()
       title.display();
       
       imageMode(CENTER);
-      imgmgr.environment[0].resize(0, 650);
-      imgmgr.environment[1].resize(0, 650);
-      imgmgr.environment[2].resize(0, 650);
       
-      if (count == 1) {   
-          image(imgmgr.environment[0], width/2, height/2 + 20);
+      
+      if (count == 1) {
+             rough.easeIn();
+             rough.display();
+//           image(imgmgr.environment[0], width/2, height/2 + 20);
 //           image(imgmgr.environment[0], width/2, height/2, 1200, 650);
       }  else if (count == 2) {
-          image(imgmgr.environment[1], width/2, height/2 + 20);
+             color1.easeIn();
+             color1.display();
+//           image(imgmgr.environment[1], width/2, height/2 + 20);
 //           image(imgmgr.environment[1], width/2, height/2, 1300, 650);
       }  else if (count == 3) {
-          image(imgmgr.environment[2], width/2, height/2 + 20);
+             color2.easeIn();
+             color2.display();
+//           image(imgmgr.environment[2], width/2, height/2 + 20);
 //           image(imgmgr.environment[2], width/2, height/2, 1300, 650);
       } 
       

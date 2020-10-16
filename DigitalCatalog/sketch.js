@@ -306,12 +306,12 @@ function Environment()
       menuShow = menu.hide();
       title = new Animation(width/2, 50, 0, 0, 'ENVIRONMENT');
       
-      imgmgr.environment[0].resize(0, 650);
-      imgmgr.environment[1].resize(0, 650);
-      imgmgr.environment[2].resize(0, 650);
-      rough = new Animation(width/2, height/2 + 20, 0, 0, false, imgmgr.environment[0]);
-      color1 = new Animation(width/2, height/2 + 20, 0, 0, false, imgmgr.environment[1]);
-      color2 = new Animation(width/2, height/2 + 20, 0, 0, false, imgmgr.environment[2]);
+//       imgmgr.environment[0].resize(0, 650);
+//       imgmgr.environment[1].resize(0, 650);
+//       imgmgr.environment[2].resize(0, 650);
+      rough = new Animation(width/2, height/2 + 20, 0, 650, false, imgmgr.environment[0]);
+      color1 = new Animation(width/2, height/2 + 20, 0, 650, false, imgmgr.environment[1]);
+      color2 = new Animation(width/2, height/2 + 20, 0, 650, false, imgmgr.environment[2]);
       
     }
   

@@ -52,9 +52,9 @@ class Animation {
     } 
     
     if (this.in && this.alpha < 255) {
-      this.alpha += 2;
+      this.alpha += 3;
     } else if (this.out && this.alpha > 0) {
-      this.alpha -= 2;
+      this.alpha -= 3;
     }
     
   }

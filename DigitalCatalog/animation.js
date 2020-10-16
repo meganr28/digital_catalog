@@ -1,13 +1,14 @@
 class Animation {
   
-  constructor(x, y, w, h, text) {
+  constructor(x, y, w, h, text, img) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
     this.text = text;
+    this.img = img;
     
-    this.alpha = 255;
+    this.alpha = 0;
     this.none = true;
     this.in = false;
     this.out = false;
@@ -40,14 +41,16 @@ class Animation {
         }
       }
     } else {
-      fill(0, 0, 0, this.alpha);
-      text(this.text, this.x, this.y);
+//       fill(0, 0, 0, this.alpha);
+      tint(255, this.alpha);
+//       text(this.text, this.x, this.y);
+      image(this.img, this.x, this.y, this.w, this.h);
     } 
     
     if (this.in && this.alpha < 255) {
-      this.alpha += 3;
+      this.alpha += 2;
     } else if (this.out && this.alpha > 0) {
-      this.alpha -= 3;
+      this.alpha -= 2;
     }
     
   }

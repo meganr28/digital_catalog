@@ -42,7 +42,7 @@ class Animation {
       }
     } else {
          if (this.text) {
-           fill(0, 0, 0, this.alpha);
+           fill('black');
            text(this.text, this.x, this.y);
          } else {
            tint(255, this.alpha);

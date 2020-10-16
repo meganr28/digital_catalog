@@ -340,12 +340,14 @@ function Environment()
       }
       if (count == 2) {
              color1.easeIn();
+             rough.display();
              color1.display();
 //           image(imgmgr.environment[1], width/2, height/2 + 20);
 //           image(imgmgr.environment[1], width/2, height/2, 1300, 650);
       }
       if (count == 3) {
              color2.easeIn();
+             color1.display();
              color2.display();
 //           image(imgmgr.environment[2], width/2, height/2 + 20);
 //           image(imgmgr.environment[2], width/2, height/2, 1300, 650);

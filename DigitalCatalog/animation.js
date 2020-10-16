@@ -46,6 +46,7 @@ class Animation {
            text(this.text, this.x, this.y);
          } else {
            tint(255, this.alpha);
+           this.img.resize(this.w, this.h);
            image(this.img, this.x, this.y);
          }
     } 

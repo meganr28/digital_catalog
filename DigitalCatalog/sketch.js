@@ -103,7 +103,7 @@ function Intro()
       
        fill('white');
        textSize(24);
-       text('Digital Catalog', width/2, height/2 + 200);
+       text('Digital Catalog', width/2, height/2 + 100);
        text('Usage:\n' +
              'RIGHT ARROW to go to next scene\n' +
              'LEFT ARROW to go to previous scene\n' +

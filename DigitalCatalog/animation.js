@@ -41,10 +41,13 @@ class Animation {
         }
       }
     } else {
-//       fill(0, 0, 0, this.alpha);
-      tint(255, this.alpha);
-//       text(this.text, this.x, this.y);
-      image(this.img, this.x, this.y);
+         if (this.text) {
+           fill(0, 0, 0, this.alpha);
+           text(this.text, this.x, this.y);
+         } else {
+           tint(255, this.alpha);
+           image(this.img, this.x, this.y);
+         }
     } 
     
     if (this.in && this.alpha < 255) {

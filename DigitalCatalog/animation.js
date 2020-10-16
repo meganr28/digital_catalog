@@ -44,7 +44,7 @@ class Animation {
 //       fill(0, 0, 0, this.alpha);
       tint(255, this.alpha);
 //       text(this.text, this.x, this.y);
-      image(this.img, this.x, this.y, this.w, this.h);
+      image(this.img, this.x, this.y);
     } 
     
     if (this.in && this.alpha < 255) {

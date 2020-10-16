@@ -337,12 +337,14 @@ function Environment()
              rough.display();
 //           image(imgmgr.environment[0], width/2, height/2 + 20);
 //           image(imgmgr.environment[0], width/2, height/2, 1200, 650);
-      }  else if (count == 2) {
+      }
+      if (count == 2) {
              color1.easeIn();
              color1.display();
 //           image(imgmgr.environment[1], width/2, height/2 + 20);
 //           image(imgmgr.environment[1], width/2, height/2, 1300, 650);
-      }  else if (count == 3) {
+      }
+      if (count == 3) {
              color2.easeIn();
              color2.display();
 //           image(imgmgr.environment[2], width/2, height/2 + 20);
@@ -370,11 +372,14 @@ function Prop()
 {
     let c = color(75, 42, 83);
     let title;
+    let potions_box, spellbook;
     let count = 0;
   
     this.enter = function() {
       
       title = new Animation(width/2, 50, 0, 0, 'PROPS');
+      potions_box = new Animation(500, 400, 700, 500, false, imgmgr.props[0]);
+      spellbook = new Animation(1200, 400, 700, 500, false, imgmgr.props[1]);
       
     }
   
@@ -393,10 +398,14 @@ function Prop()
       title.display();
       
       if (count == 1) {
-          image(imgmgr.props[0], 500, 400, 700, 500);
-      } else if (count == 2) {
-          image(imgmgr.props[0], 500, 400, 700, 500);
-          image(imgmgr.props[1], 1200, 400, 700, 500);
+        potions_box.easeIn();
+        potions_box.display();
+//           image(imgmgr.props[0], 500, 400, 700, 500);
+      if (count == 2) {
+        spellbook.easeIn();
+        spellbook.display();
+//           image(imgmgr.props[0], 500, 400, 700, 500);
+//           image(imgmgr.props[1], 1200, 400, 700, 500);
       } 
       
     }

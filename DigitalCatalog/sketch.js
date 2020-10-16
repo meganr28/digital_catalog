@@ -401,6 +401,7 @@ function Prop()
         potions_box.easeIn();
         potions_box.display();
 //           image(imgmgr.props[0], 500, 400, 700, 500);
+      }
       if (count == 2) {
         spellbook.easeIn();
         spellbook.display();

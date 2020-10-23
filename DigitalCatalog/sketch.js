@@ -434,10 +434,18 @@ function Storyboard()
 {
     let c = color(39, 22, 55);
   
+    this.enter = function() {
+      
+      animatic = createVideo(['images/animatic.mp4']);
+      animatic.hide(); // by default video shows up in separate dom
+      
+    }
+  
     this.draw = function() {
       
 //       background(c);
        background('black');
+       image(animatic, 100, 100);
       
     }
 

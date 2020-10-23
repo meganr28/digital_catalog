@@ -7,6 +7,7 @@ class ImageManager {
     this.characters = [];
     this.environment = [];
     this.props = [];
+    this.end = [];
   }
   
   loadTitle() {
@@ -68,6 +69,12 @@ class ImageManager {
     potions_box = loadImage('images/props/potions_box.png');
     spellbook = loadImage('images/props/spellbook.png');
     this.props = [potions_box, spellbook];
+  }
+  
+  loadEnd() {
+    let end;
+    end = loadImage('images/credits.png');
+    this.end = [end];
   }
   
 }

@@ -31,6 +31,7 @@ function setup() {
   imgmgr.loadChar();
   imgmgr.loadEnv();
   imgmgr.loadProps();
+  imgmgr.loadEnd();
   
 }
 
@@ -405,6 +406,7 @@ function Prop()
 //           image(imgmgr.props[0], 500, 400, 700, 500);
       }
       if (count == 2) {
+        potions_box.display();
         spellbook.easeIn();
         spellbook.display();
 //           image(imgmgr.props[0], 500, 400, 700, 500);
@@ -447,21 +449,26 @@ function End()
   
     this.draw = function() {
       
-//       background(c);
       background('black');
-      textAlign(CENTER);
+      imageMode(CENTER);
+      imgmgr.end[0].resize(0, 800);
+      image(imgmgr.end[0], width/2, height/2);
+      
+//       background(c);
+//       background('black');
+//       textAlign(CENTER);
       
       
-      fill('white');
-      text('Credits:', width/2, 50);
-      textAlign(LEFT);
-      text('Christy Nguyen - Character Design and Storyboarding\n' +
-           'Emily Claus - Storyboarding\n' +
-           'Katie Conway - Script and Storyboarding\n' +
-           'Haley Lambert - Background, Prop, and Character Design\n' +
-           'Jocelyn Montoya - Character and Prop Design\n' +
-           'Megan Reddy - Technical Direction\n' +
-           'Maansi Sunkara - Production Management', width/2 - 400, 100);
+//       fill('white');
+//       text('Credits:', width/2, 50);
+//       textAlign(LEFT);
+//       text('Christy Nguyen - Character Design and Storyboarding\n' +
+//            'Emily Claus - Storyboarding\n' +
+//            'Katie Conway - Script and Storyboarding\n' +
+//            'Haley Lambert - Background, Prop, and Character Design\n' +
+//            'Jocelyn Montoya - Character and Prop Design\n' +
+//            'Megan Reddy - Technical Direction\n' +
+//            'Maansi Sunkara - Production Management', width/2 - 400, 100);
       
     }
 
